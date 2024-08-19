@@ -1,9 +1,25 @@
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
-const container = document.querySelector('.mainContent')
+const mainContainer = document.querySelector('.mainContent')
 
-left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
-left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
 
-right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
-right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
+// function cursorMovedEnter(side) {
+//     mainContainer.classList.add(`hover-${side}`) //uso de template literals para crear dinamicamente el nombre de la clase
+// }
+
+// function cursorMovedOut(side) {
+//     mainContainer.classList.remove(`hover-${side}`)
+// }
+
+// left.addEventListener('mouseenter', () => cursorMovedEnter('left'));
+// left.addEventListener('mouseleave', () => cursorMovedOut('left'));
+
+// right.addEventListener('mouseenter', () => cursorMovedEnter('right'));
+// right.addEventListener('mouseleave', () => cursorMovedOut ('right'));
+
+
+left.addEventListener('cursorEnter', () => mainContainer.classList.add('hoverLeft'))
+left.addEventListener('cursorLeave', () => mainContainer.classList.remove('hoverLeft'))
+
+right.addEventListener('cursorEnter', () => mainContainer.classList.add('hoverRight'))
+right.addEventListener('cursorLeave', () => mainContainer.classList.remove('hoverRight'))
