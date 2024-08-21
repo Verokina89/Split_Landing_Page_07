@@ -185,9 +185,9 @@ h2 {
     .btn {
         font-size: 14px;
         position: absolute;
-        top: 50%;
+        top: 36%;
         left: 50%;
-        padding: 20px 60px;
+        padding: 24px 68px;
         transform: translate(-50%, -50%); /*ajusta la posicion para centrarlo*/
     }
 
