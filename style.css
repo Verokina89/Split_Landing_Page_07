@@ -75,7 +75,6 @@ h2 {
     transform: translateX(-50%);
     white-space: nowrap; /*El texto se mantiene en una sola línea, no desborda*/
     color: white;
-    white-space: nowrap;
 }
 
 .btn {
@@ -177,19 +176,39 @@ h2 {
 }
 
 @media (max-width: 800px) {
-
+    
     h2 {
-        font-size: 30px;
-        top: 30%;
-    }
-
-    .split {
-        max-width: 50%;
+        font-size: 35px;
+        top: 20%;
     }
 
     .btn {
-        font-size: 16px;
-        right: 20px;
-        padding: 10px 50px;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px 60px;
+        transform: translate(-50%, -50%); /*ajusta la posicion para centrarlo*/
     }
+
+    .split {
+        width: 50%;
+    }
+
+    .mainContent.hover-left .left {
+        width: 70%;
+    }
+
+   .mainContent.hover-left .right {
+        width: 30%;
+   }
+
+   .mainContent.hover-right .left {
+        width: 30%;
+   }
+
+   .mainContent.hover-right .right {
+        width: 70%;
+   }
+
 }
