@@ -68,10 +68,10 @@ body {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 38px;
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 30%;
     transform: translateX(-50%);
     white-space: nowrap; /*El texto se mantiene en una sola línea, no desborda*/
     color: white;
@@ -85,10 +85,11 @@ h2 {
     border: white solid 3px;
     font-size: 16px;
     font-weight: bold;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 70px;
+    left: 50%;
+    padding: 24px 68px;
     cursor: pointer;
     white-space: nowrap;
 }
@@ -175,17 +176,17 @@ h2 {
     width: 75%;  /*expande la seccion derecha*/
 }
 
-@media (max-width: 800px) {
+@media (max-width: 812px) {
     
     h2 {
-        font-size: 35px;
-        top: 20%;
+        font-size: 30px;
+
     }
 
     .btn {
         font-size: 14px;
         position: absolute;
-        top: 36%;
+        top: 30%;
         left: 50%;
         padding: 24px 68px;
         transform: translate(-50%, -50%); /*ajusta la posicion para centrarlo*/
@@ -211,4 +212,17 @@ h2 {
         width: 70%;
    }
 
+}
+
+@media (min-width: 230px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 12px 40px;
+        top: 50%;
+        position: absolute;
+    }
 }
